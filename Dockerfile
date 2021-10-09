@@ -1,6 +1,6 @@
 FROM python:3
 
-WORKDIR /usr/src/place
+WORKDIR /usr/src/app
 
 COPY requirements.txt .
 
@@ -8,5 +8,5 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 COPY . .
 
-CMD ["python", "place.py"]
+CMD ["python", "app.py"]
 
