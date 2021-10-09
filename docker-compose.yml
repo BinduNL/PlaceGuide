@@ -1,0 +1,8 @@
+version : '3'
+services :
+  place :
+    build : .
+    ports :
+      - "5000:5000"
+    volumes:
+      - .:/usr/src/place
